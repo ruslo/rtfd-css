@@ -1,8 +1,8 @@
 .. Copyright (c) 2016, Ruslan Baratov
 .. All rights reserved.
 
-Welcome to rtfd-css's documentation!
-====================================
+rtfd-css
+========
 
 Contents:
 
