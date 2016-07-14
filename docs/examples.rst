@@ -1,6 +1,9 @@
 .. Copyright (c) 2016, Ruslan Baratov
 .. All rights reserved.
 
+Examples
+--------
+
 rtfd-css.css
 ============
 
