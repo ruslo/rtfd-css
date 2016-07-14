@@ -8,7 +8,8 @@ Custom ``*.css`` used in various projects. Usage:
 
 #. Add `this`_ repository as a submodule
 #. Modify ``conf.py`` (see `patch`_):
-    * add ``rtdf-css`` directory to the static paths
+    * ignore documentation files from ``rtfd-css`` directory
+    * add ``rtfd-css/docs/rtfd-css`` directory to the static paths
     * load CSS by ``add_stylesheet``
 
 .. toctree::
@@ -18,4 +19,4 @@ Custom ``*.css`` used in various projects. Usage:
    /bug
 
 .. _this: https://github.com/ruslo/rtfd-css
-.. _patch: https://github.com/ruslo/rtfd-css/commit/8347f066816dd8d786154f3578d0ce54c146f798
+.. _patch: https://github.com/ruslo/CGold/commit/7c45924567fe3fd53e8a900935fdcaf35d62febf
