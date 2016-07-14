@@ -32,6 +32,8 @@ CSS defined in ``rtfd-css.css`` file:
 custom.css
 ==========
 
+Taken from: https://github.com/Microsoft/Office-Online-Test-Tools-and-Documentation
+
 .. tip::
 
   This is a tip
