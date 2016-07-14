@@ -115,6 +115,27 @@ html_theme = 'alabaster'
 # documentation.
 #html_theme_options = {}
 
+# From:
+# * https://github.com/snide/sphinx_rtd_theme#using-this-theme-locally-then-building-on-read-the-docs
+# on_rtd is whether we are on readthedocs.org, this line of code grabbed from docs.readthedocs.org
+on_rtd = os.environ.get('READTHEDOCS', None) == 'True'
+
+if not on_rtd:  # only import and set the theme if we're building docs locally
+    import sphinx_rtd_theme
+    html_theme = 'sphinx_rtd_theme'
+    html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
+
+# Suppress warnings: http://stackoverflow.com/a/28778969/2288008
+if not on_rtd:
+  import sphinx.environment
+  from docutils.utils import get_source_line
+
+  def _warn_node(self, msg, node, **kwargs):
+      if not msg.startswith('nonlocal image URI found:'):
+          self._warnfunc(msg, '%s:%s' % get_source_line(node), **kwargs)
+
+  sphinx.environment.BuildEnvironment.warn_node = _warn_node
+
 # Add any paths that contain custom themes here, relative to this directory.
 #html_theme_path = []
 
