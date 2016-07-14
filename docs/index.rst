@@ -18,5 +18,10 @@ Custom ``*.css`` used in various projects. Usage:
    /examples
    /bug
 
+Used by:
+
+* https://docs.hunter.sh
+* http://cgold.rtfd.io
+
 .. _this: https://github.com/ruslo/rtfd-css
 .. _patch: https://github.com/ruslo/CGold/commit/7c45924567fe3fd53e8a900935fdcaf35d62febf
