@@ -142,3 +142,8 @@ All rights reserved.
 .rst-content .admonition-hunter .admonition-title:before {
   content:url('https://docs.hunter.sh/thirdpartylogos/package-16x16.png');
 }
+
+/* Strikethrough support (http://stackoverflow.com/a/6652379/2288008) */
+.strike {
+  text-decoration: line-through;
+}
