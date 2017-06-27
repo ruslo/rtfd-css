@@ -87,6 +87,20 @@ All rights reserved.
   content:url('https://docs.hunter.sh/thirdpartylogos/cmake-16x16.png');
 }
 
+/* CMake issue */
+.rst-content .admonition-cmake-issue {
+  background-color: #dbfaf4 !important;
+  padding-bottom: 1px !important;
+}
+
+.rst-content .admonition-cmake-issue .admonition-title {
+  background-color: #1abc9c !important;
+}
+
+.rst-content .admonition-cmake-issue .admonition-title:before {
+  content:url('https://docs.hunter.sh/thirdpartylogos/cmake-16x16.png');
+}
+
 /* Wikipedia */
 .rst-content .admonition-wikipedia {
   background-color: #dbfaf4 !important;
